@@ -8,6 +8,8 @@ module.exports = (sequelize) => {
         //Nombre
         name: {
             type: DataTypes.STRING,
+            allowNull: false,
+            unique: true
         },
         // Dificultad (Entre 1 y 5)
         difficulty: {
