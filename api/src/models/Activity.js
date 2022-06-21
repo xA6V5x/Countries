@@ -3,13 +3,11 @@ const { DataTypes } = require('sequelize');
 // Luego le injectamos la conexion a sequelize.
 module.exports = (sequelize) => {
     // defino el modelo
-    sequelize.define('activity', {
+    sequelize.define('Activity', {
         // ID(dejo que sequelize lo genere por defecto)
         //Nombre
         name: {
             type: DataTypes.STRING,
-            allowNull: false,
-            unique: true
         },
         // Dificultad (Entre 1 y 5)
         difficulty: {

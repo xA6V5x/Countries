@@ -16,7 +16,7 @@ router.post('/', async function (req, res, next){
             length: length,
             season: season,
         })
-        res.json(newActivity.name)
+        res.send(`La actividad "${newActivity.name}" a sido creada correctamente.`)
     } catch (error) {
         next(error);
     }
