@@ -3,7 +3,7 @@
 const router = require('express').Router();
 const { Country } = require('../db');
 
-const { getCountriesApi, getAllCountriesBD } = require("../controllers/Countries");
+const { getCountriesApi, getAllCountriesDB } = require("../controllers/Countries");
 
 
 // [ ] GET /countries:
@@ -13,7 +13,7 @@ const { getCountriesApi, getAllCountriesBD } = require("../controllers/Countries
 router.get('/', async function (req, res, next) {
     const name = req.query.name;
     try {
-        let allCountries = await getAllCountriesBD();
+        let allCountries = await getAllCountriesDB();
         // [ ] GET /countries?name="...":
         // GET https://restcountries.com/v3/name/{name}
         // Obtener los países que coincidan con el nombre pasado como query parameter (No necesariamente tiene que ser una matcheo exacto)

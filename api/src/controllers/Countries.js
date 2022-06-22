@@ -21,7 +21,7 @@ const getCountriesApi = async () => {
     return result;
 };
 
-const getAllCountriesBD = async () => {
+const getAllCountriesDB = async () => {
     const getApi = await axios.get('https://restcountries.com/v3/all');
     const countries = getApi.data.map(async (data) => {
         const [findCountrys, create] = 
@@ -47,5 +47,5 @@ const getAllCountriesBD = async () => {
 
 module.exports = {
     getCountriesApi,
-    getAllCountriesBD,
+    getAllCountriesDB,
 };

@@ -1,0 +1,19 @@
+.logos {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 100;
+  margin-left: 78vw;
+  margin-top: 0px;  
+}
+
+.logo {
+  width: 30px;
+  height: 50px;
+  padding: 20px 30px 0px;
+}
+
+img {
+  width: 2.5vw;
+  height: auto;
+}

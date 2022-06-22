@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(228, 234, 237);
+  background: linear-gradient(357deg, rgba(228, 234, 237, 1) 62%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+/* Info -------------------------------------------- */
+
+.home_info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 420px;
+  height: 380px;
+  border-radius: 15px;
+  margin-top: 165px;
+  margin-left: 75px;
+  z-index: 2;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.47);
+
+}
+
+/* Fonts ------------------------------------- */
+
+.home_info h1 {
+  font-family: 'Grape Nuts', cursive;
+  font-size: 80px;
+  text-align: left;
+  background-image: linear-gradient(20deg, #21496E 20px, #22b398);
+  background-color: #21496E;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-top: 100px;
+}
+
+.home_info p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: rgb(9, 17, 31);
+  margin-top: -10px;
+}
+
+.home_info button {
+  margin-top: 20px;
+  width: 150px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.enter {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color: rgb(21, 46, 71);
+  ;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.enter:hover {
+  color: rgb(152, 0, 43);
+}
+
+/* Slider -------------------------------------------------- */
+
+.slider_frame {
+  position: absolute;
+  width: 69%;
+  height: auto;
+  margin-top: 70px;
+  right: 75px;
+  overflow: hidden;
+border-radius: 20px;
+}
+
+.slider_frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider_frame li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider_frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+
+  15% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/* DOTS -------------------------------------- */
+
+.dots {
+  width: 160px;
+  height: auto;
+  margin-top: 55px;
+  margin-left: 60px;
+  z-index: 5;
+}
