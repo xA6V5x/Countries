@@ -25,12 +25,12 @@ const CountriesContainer = () => {
 
      return (
           <div className={styles.cards_container}>
-               <Pagination
+               {/* <Pagination
                     countriesPerPage={countriesPerPage}
                     allCountries={allCountries.length}
                     pagination={pagination}
                     currentPage={currentPage}
-               />
+               /> */}
                <div className={styles.cards_slider}>
                     {currentCountries.length > 0 ? (
                          allCountries.map((country, index) =>
