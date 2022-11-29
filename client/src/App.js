@@ -1,15 +1,18 @@
 import './App.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPage.jsx'
+import Home from './components/Home/Home.jsx'
+import CountryDetails from './components/CountryDetails/CountryDetails';
 
 function App() {
   return (
-    <BrowserRouter className="App">
-      <Switch>
-        <Route path="/" component={LandingPage} />
-        <h1>Henry Countries</h1>
-      </Switch>
-    </BrowserRouter>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<LandingPage/>} />
+        <Route path="/countries" element={<Home/>} />
+        <Route path="/countries/:idPais" element={<CountryDetails/>} />
+      </Routes>
+    </div>
   );
 }
 

@@ -1,0 +1,92 @@
+.navegador{
+  /* margin: 30px auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 15px;
+  width: 800px;
+  height: 45px;
+  z-index: 10;
+
+  background-image: linear-gradient(
+    305deg,
+    hsl(209deg 54% 28%) 0%,
+    hsl(204deg 55% 29%) 12%,
+    hsl(198deg 57% 29%) 23%,
+    hsl(192deg 58% 30%) 36%,
+    hsl(186deg 60% 31%) 49%,
+    hsl(181deg 62% 31%) 63%,
+    hsl(175deg 63% 32%) 82%,
+    rgb(29, 135, 115) 100%
+  );
+  box-shadow: 0 0 4px rgba(0, 0, 5, 0.341);
+
+}
+
+/* Buscador-------- */
+
+
+.search_country {
+  text-indent: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  height: 25px;
+  font-family: Quicksand, sans-serif;
+}
+
+::placeholder {
+  font-family: Quicksand, sans-serif;
+  color: gray;
+}
+
+.material_symbols_outlined {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: -35px;
+  cursor: pointer;
+  background-color:rgba(255, 255, 255, 0);
+  width: 30px;
+  border-color: #fdfdfd00;
+}
+
+.material_symbols_outlined img {
+  width: 20px;
+}
+
+/* LINKS */
+
+.navegador .btn_link {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+  margin-top: -4px;
+  margin-right: 11px;
+  font-family: Quicksand, sans-serif;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.navegador h1{
+  font-family: 'Grape Nuts', cursive;
+  font-weight: lighter;
+  font-size: 70px;
+  position: absolute;
+  top: 5px;
+  left: 23px;
+
+  background-image: linear-gradient(20deg, #21496E 20px, #22b398) ;
+  background-color: #21496E;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  
+  z-index: 1;
+}

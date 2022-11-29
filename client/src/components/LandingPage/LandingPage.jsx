@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from './LandingPage.module.css';
 import Logos from "../Logos/Logos";
-import sliderLanding1 from '../../assets/SliderLanding/sliderLanding2.jpg'
-import sliderLanding2 from '../../assets/SliderLanding/sliderLanding1.jpg'
-import sliderLanding3 from '../../assets/SliderLanding/sliderLanding3.jpg'
-import sliderLanding4 from '../../assets/SliderLanding/sliderLanding5.jpg'
-import dots from '../../assets/SliderLanding/dots.png'
-import styles from './LandingPage.module.css'
+import sliderLanding1 from '../../assets/SliderLanding/sliderLanding2.jpg';
+import sliderLanding2 from '../../assets/SliderLanding/sliderLanding1.jpg';
+import sliderLanding3 from '../../assets/SliderLanding/sliderLanding3.jpg';
+import sliderLanding4 from '../../assets/SliderLanding/sliderLanding5.jpg';
+import dots from '../../assets/SliderLanding/dots.png';
 
-const Home = () => {
+const LandingPage = () => {
     return (
         <div className={styles.container} >
 
@@ -41,4 +41,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default LandingPage;
