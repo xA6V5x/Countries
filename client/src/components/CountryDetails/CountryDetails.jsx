@@ -17,7 +17,7 @@ const CountryDetails = () => {
 
      useEffect(() => {
           dispatch(getCountryDetails(idPais));
-     }, [dispatch]);
+     }, []);
 
      // const areaKM = new Intl.NumberFormat('es-MX').format(area);
 
