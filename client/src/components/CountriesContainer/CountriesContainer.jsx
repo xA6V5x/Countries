@@ -31,23 +31,21 @@ const CountriesContainer = () => {
                     pagination={pagination}
                     currentPage={currentPage}
                /> */}
-               <div className={styles.cards_slider}>
-                    {currentCountries.length > 0 ? (
-                         allCountries.map((country, index) =>
-                              index < 9 ? (
-                                   <CountryCard
-                                        key={country.id}
-                                        id={country.id}
-                                        name={country.name}
-                                        flag={country.flags}
-                                        continent={country.continents}
-                                   />
-                              ) : null
-                         )
-                    ) : (
-                         <Spinner />
-                    )}
-               </div>
+               {currentCountries.length > 0 ? (
+                    allCountries.map((country, index) =>
+                         index < 9 ? (
+                              <CountryCard
+                                   key={country.id}
+                                   id={country.id}
+                                   name={country.name}
+                                   flag={country.flags}
+                                   continent={country.continents}
+                              />
+                         ) : null
+                    )
+               ) : (
+                    <Spinner />
+               )}
           </div>
      );
 };

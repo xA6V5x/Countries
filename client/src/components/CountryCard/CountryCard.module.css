@@ -1,6 +1,7 @@
 /* Card */
 
 .card {
+     margin: 10px;
      width: 180px;
      height: 190px;
      border-radius: 10px;
