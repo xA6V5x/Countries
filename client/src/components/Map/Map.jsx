@@ -9,9 +9,9 @@ export default function Map(props) {
      if (!isLoaded) return <div>Loading</div>;
 
      return (
-          <div className={styles.map}>
-               <GoogleMap zoom={4} center={center} mapContainerClassName="map-container">
-                    <Marker position={center} />
+          <div>
+               <GoogleMap zoom={4} center={center} mapContainerClassName={styles.map_container}>
+                    <Marker position={center} />{' '}
                </GoogleMap>
           </div>
      );
