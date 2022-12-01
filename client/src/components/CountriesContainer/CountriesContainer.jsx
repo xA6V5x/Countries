@@ -32,19 +32,22 @@ const CountriesContainer = () => {
                     currentPage={currentPage}
                /> */}
                {currentCountries.length > 0 ? (
-                    allCountries.map((country, index) =>
-                         index < 9 ? (
-                              <CountryCard
-                                   key={country.id}
-                                   id={country.id}
-                                   name={country.name}
-                                   flag={country.flags}
-                                   continent={country.continents}
-                              />
-                         ) : null
+                    allCountries.map(
+                         (country, index) =>
+                              index < 10 && (
+                                   <CountryCard
+                                        key={country.id}
+                                        id={country.id}
+                                        name={country.name}
+                                        flag={country.flags}
+                                        continent={country.continents}
+                                   />
+                              )
                     )
                ) : (
-                    <Spinner />
+                    <div style={{ width: '90%', height: '100%' }}>
+                         <Spinner />
+                    </div>
                )}
           </div>
      );

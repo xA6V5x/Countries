@@ -37,8 +37,12 @@ const Nav = () => {
                <Link to="/countries" className={styles.btn_link}>
                     Home
                </Link>
-               <button className={styles.btn_link}>Country Info</button>
-               <button className={styles.btn_link}>Create Your Activity</button>
+               <Link to="/createAtivity" className={styles.btn_link}>
+                    Create Activity
+               </Link>
+               <Link to="about" className={styles.btn_link}>
+                    About
+               </Link>
                <Link to="/">
                     <h1>Travelers</h1>
                </Link>

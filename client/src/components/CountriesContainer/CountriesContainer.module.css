@@ -1,7 +1,7 @@
 .cards_container {
      position: absolute;
      right: 0;
-     margin-top: 15vh;
+     margin-top: 19vh;
 
      display: flex;
      align-items: center;
@@ -11,6 +11,7 @@
      flex-wrap: wrap;
 
      width: 70vw;
+     height: 55vh;
      margin-left: 250px;
      /* margin-top: 80px; */
 
